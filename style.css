@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 1140px;
+  margin: auto;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+.nav{
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
+  border-bottom: 7px solid;
+  border-image: linear-gradient(to right,blueviolet, rgb(255, 72, 164), orange, red);
+  border-image-slice: 1;
+  background:white;
+    position: sticky;
+  top: 0;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav h1 {
+  font-size: 50px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.nav span {
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.nav .right,
+.nav .left {
+  width: 40%;
+}
+
+.nav .right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: rgb(102, 90, 90);
+  width: 100px;
+  text-align: center;
+}
+
+.nav a:hover {
+color: black;
+  transition: 0.3s;
+  font-weight: 700;
+}
+
+
+.nav .button{
+    padding: 10px 5px !important;
+    color: white;
+}
+
+#hero h1,
+#dream h1 {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  margin: 0;
+  padding: 0;
+}
+#hero .left,
+#dream .left,
+#hero .right,
+#dream .right {
+  width: 45%;
+}
+
+#hero span {
+  color: orangered;
+}
+
+#hero h2,
+#dream h2 {
+  font-weight: 600;
+}
+
+hr {
+  margin-bottom: 10px;
+  width: 30%;
+  height: 5px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, orangered, red);
+}
+
+p {
+  text-align: justify;
+  margin-bottom: 30px;
+  width: 90%;
+}
+
+.button {
+  background: linear-gradient(to right, orangered, red);
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 20px 10px rgba(255, 69, 0, 0.15);
+}
+
+.button:hover {
+  box-shadow: 1px 1px 20px 10px rgba(255, 69, 0, 0.2);
+  transition: 0.5s;
+}
+
+#hero .container,
+#dream .container,
+#experience .container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+}
+
+#hero {
+  background: url("./images/top-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#dream {
+  background: url("/images/dream-bg.png") no-repeat;
+  background-position: right;
+}
+
+#dream .button {
+  box-shadow: 1px 1px 20px 10px rgba(255, 0, 200, 0.15);
+  background: linear-gradient(to right, rgb(255, 72, 164), rgb(255, 0, 106));
+}
+
+#experience {
+  background: url("/images/exp-bg.png") no-repeat;
+  background-position: left;
+}
+
+#experience .heading {
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: -150px;
+  text-transform: uppercase;
+  font-size: 50px;
+  width: 23%;
+}
+
+#experience p {
+  width: 100%;
+}
+
+#experience .single {
+  width: 25%;
+  padding: 30px;
+  background-color: white;
+}
+
+#experience .single:first-child {
+      box-shadow: 1px 1px 20px 1px rgba(255, 69, 0, 0.15);
+border-bottom: 7px solid;
+  border-image: linear-gradient(to right, rgb(255, 72, 164), rgb(255, 69, 0));
+  border-image-slice: 1;
+}
+
+#experience .single:nth-child(2) {
+  border-bottom: 7px solid;
+  border-image: linear-gradient(to right, rgb(255, 72, 164), rgb(255, 0, 106));
+  border-image-slice: 1;
+box-shadow: 1px 1px 20px 1px rgba(255, 0, 200, 0.1);
+}
+
+#experience .single:last-child {
+  border-bottom: 7px solid;
+  border-image: linear-gradient(to right, rgb(255, 72, 96), rgb(183, 0, 255));
+  border-image-slice: 1;
+box-shadow: 1px 1px 20px 1px rgba(255, 0, 200, 0.1);
+}
+
+.footer{
+    border-top: 1px solid lightgray;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footer .container{
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+align-items: center;
+}
+
+.footer i{
+    color: red;
+}
+
+.social{
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.social i{
+  font-size: 25px;
+  color: orangered;
+}
+
+
+.top{
+  position: fixed;
+        bottom: 10px;
+        float: right;
+        right: 5.5%;
+        left: 94.25%;
+        max-width: 30px;
+        width: 100%;
+        background: linear-gradient(to right, rgb(255, 72, 164), rgb(255, 0, 106));
+        padding: 8px 6px;
+        border-radius: 50%;
+text-align:center;
+}
+
+.top i{
+ color: white;
+  font-size: 20px;
+}

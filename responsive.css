@@ -1,0 +1,70 @@
+@media only screen and (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+
+  .nav .left,
+  .nav .right,
+  #hero .left,
+  #hero .right,
+  #dream .right,
+  #dream .left {
+    width: 100%;
+  }
+
+.nav .container,
+  #hero .container,
+  #dream .container,
+  #experience .container,
+  .footer .container{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #dream .container{
+      flex-direction: column-reverse;
+       margin: 30px auto;
+  }
+
+    #hero .container img
+  #dream .container img{
+    width: 80%;
+  }
+
+  .nav{
+     text-align: center;
+     padding-bottom: 10px;
+  }
+  .nav h1,
+  .brand{
+    font-size: 35px;
+  }
+   #experience .single {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  #experience .heading{
+    text-align: center;
+      margin: 0;
+      width: 100%;
+    
+  }
+  #experience hr{
+    margin: 5px auto 20px auto;
+  }
+
+  .top{
+        right: 15.5%;
+        left: 84.25%;
+}
+.social{
+  width: 50%;
+}
+.footer{
+  padding: 10px 0;
+}
+}
